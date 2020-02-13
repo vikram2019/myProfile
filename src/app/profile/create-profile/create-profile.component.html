@@ -1,0 +1,949 @@
+
+<div class="card body">
+  <div class="card-body">
+    <div class="container  marginTop20">
+      <form [formGroup]="createProfile">
+        <div >
+
+        <!-- Name -->
+        <div class="shadow p-3 mb-5 bg-white rounded">
+          <div class="modal-content">
+            <div class="modal-header   text-white">
+              <h4 class="title"><i class="fa fa-pencil-alt"></i> Name</h4>
+              <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!-- <fieldset  class="border p-2 ">
+              <legend>Name</legend> -->
+              <div class="row">
+                <mat-form-field class="marginLeft20 mat-form-fieldWidth" appearance="outline">
+                  <mat-label>First Name</mat-label>
+                  <input matInput name="firstName" formControlName="firstName" placeholder="Your Name">
+                  <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                  <!-- <mat-hint>Name</mat-hint> -->
+                </mat-form-field>
+                <div class="has text-danger" *ngIf="createProfile.controls['firstName'].invalid && (createProfile.controls['firstName'].touched)">
+                  <div [hidden]="!createProfile.controls['firstName'].errors.required">
+                    First Name Is Required
+                  </div>
+                </div>
+                <mat-form-field class="marginLeft60 mat-form-fieldWidth" appearance="outline">
+                  <mat-label>Middle Name</mat-label>
+                  <input matInput name="middleName" formControlName="middleName" placeholder="Middle Name">
+                  <!-- <div class="has text-danger" *ngIf="createProfile.controls['middleName'].invalid && (createProfile.controls['middleName'].touched)">
+                    <div [hidden]="!createProfile.controls['middleName'].errors.required">
+                      Middle Name Is Required
+                    </div>
+                  </div> -->
+                </mat-form-field>
+                <mat-form-field class="marginLeft60 mat-form-fieldWidth" appearance="outline">
+                  <mat-label>Last Name</mat-label>
+                  <input matInput name="lastName" formControlName="lastName" placeholder="Last Name">
+                </mat-form-field>
+                <div class="has text-danger" *ngIf="createProfile.controls['lastName'].invalid && (createProfile.controls['lastName'].touched)">
+                  <div [hidden]="!createProfile.controls['lastName'].errors.required">
+                    Last Name Is Required
+                  </div>
+                </div>
+              </div>
+              <!-- </fieldset> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Email And Contacts-->
+        <div class="row">
+          <!-- Email -->
+          <div class="col-md-6">
+            <div class="shadow p-3 mb-5 bg-white rounded">
+              <div class="modal-content">
+                <div class="modal-header text-white">
+                  <h4 class="title"><i class="fa fa-pencil-alt"></i> Email</h4>
+                  <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!-- <fieldset  class="border p-2 ">
+                  <legend>Name</legend> -->
+                  <mat-form-field class="" style="width: 450px;" appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput name="email" formControlName="email" placeholder="Email">
+                    <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                    <!-- <mat-hint>Name</mat-hint> -->
+                  </mat-form-field>
+                  <br>
+                  <mat-form-field class="" style="width: 450px;" appearance="outline">
+                    <mat-label>Alternate Email</mat-label>
+                    <input matInput name="alternateEmail" formControlName="alternateEmail">
+                    <div class="has text-danger" *ngIf="createProfile.controls['alternateEmail'].invalid && (createProfile.controls['alternateEmail'].touched)">
+                      <div [hidden]="!createProfile.controls['alternateEmail'].errors.required">
+                        Alternate Email Is Required
+                      </div>
+                    </div>
+                  </mat-form-field>
+                  <!-- </fieldset> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Contacts -->
+          <div class="col-md-6">
+            <div class="shadow p-3 mb-5 bg-white rounded">
+              <div class="modal-content">
+                <div class="modal-header text-white">
+                  <h4 class="title"><i class="fa fa-pencil-alt"></i> Contacts</h4>
+                  <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class=" marginLeft20">
+                    <div class="row">
+                      <mat-form-field  appearance="outline">
+                        <mat-label>Home</mat-label>
+                        <input matInput name="home" formControlName="home" placeholder="Home">
+                      </mat-form-field>
+                      <mat-form-field class="marginLeft20"  appearance="outline">
+                        <mat-label>Office</mat-label>
+                        <input matInput name="office" formControlName="office" placeholder="Office">
+                      </mat-form-field>
+                    </div>
+                    <div class="row">
+                      <div>
+                        <mat-form-field class=""  appearance="outline">
+                          <mat-label>Personal Mobile</mat-label>
+                          <input matInput type="number" name="personalMobile" maxlength="10" formControlName="persMobile">
+                        </mat-form-field>
+                        <div class="has text-danger" *ngIf="createProfile.controls['persMobile'].invalid && (createProfile.controls['persMobile'].touched)">
+                          <div [hidden]="!createProfile.controls['persMobile'].errors.required">
+                            Personal Mobile Is Required
+                          </div>
+                          <div [hidden]="!createProfile.controls['persMobile'].errors.minlength">
+                            Min length must be 10
+                          </div>
+                          <div [hidden]="!createProfile.controls['persMobile'].errors.maxLength">
+                            Max length must be 10
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <mat-form-field class="marginLeft20"  appearance="outline">
+                        <mat-label>Alternate Mobile</mat-label>
+                        <input matInput name="alternateNumber" formControlName="alternateNumber" placeholder="Alternate Number">
+                      </mat-form-field>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Objective And DOB -->
+        <div class="row marginTop20">
+          <!-- Objective -->
+          <div class="col-md-6 ">
+            <div class="shadow p-3 mb-5 bg-white rounded">
+              <div class="modal-content">
+                <div class="modal-header   text-white">
+                  <h4 class="title">
+                    <i class="fa fa-pencil-alt"></i>Profile Objective</h4>
+                  <button type="button" class="close waves-effect waves-light" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <mat-form-field class="mat-form-fieldWidth">
+                    <textarea matInput placeholder="Profile Objective" maxlength="250"></textarea>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- DOB -->
+          <div class="col-md-6 ">
+            <div class="shadow p-3 mb-5 bg-white rounded">
+              <div class="modal-content">
+                <div class="modal-header text-white">
+                  <h4 class="title"><i class="fa fa-pencil-alt"></i>Date Of Birth</h4>
+                  <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <mat-form-field style="width: 300px; color: red; height: 85px;">
+                    <mat-label>Date Of Birth</mat-label>
+                    <input matInput [matDatepicker]="picker2">
+                    <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                    <mat-datepicker #picker2 color="primary"></mat-datepicker>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Information -->
+        <div class="marginTop20">
+          <div class="shadow p-3 mb-5 bg-white rounded">
+            <div class="modal-content">
+              <div class="modal-header text-white">
+                <h4 class="title"><i class="fa fa-pencil-alt"></i>Information</h4>
+                <button type="button" class="close waves-effect waves-light" data-dismiss="modal"
+                  aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <mat-tab-group>
+                  <!-- Adress -->
+                  <mat-tab label="Adress"> 
+                    <mat-tab-group class="marginTop20">
+                      <!-- Temporary -->
+                      <mat-tab label="Temporary">
+                        <div class="marginTop20" style="margin-top: 40px;">
+                          <div class="shadow-lg p-3 mb-5 bg-white rounded">
+                            <div class="modal-content">
+                              <div class="modal-header text-white">
+                                <h4 class="title"><i class="fa fa-pencil-alt"></i>Temporary Adress</h4>
+                                <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">×</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="form-group">
+                                  <label for="inputAddress" style="margin-left: 5px;">Address Line 1</label>
+                                  <input type="text" class="form-control" id="inputAddress" name="tempAddLine1" formControlName="tempAddLine1" placeholder="House No / Flat No">
+                                </div>
+                                <div class="has text-danger" *ngIf="createProfile.controls['tempAddLine1'].invalid && (createProfile.controls['tempAddLine1'].touched)">
+                                  <div [hidden]="!createProfile.controls['tempAddLine1'].errors.required">
+                                    Adress Is Required
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputAddress2" style="margin-left: 5px;">Address Line 2</label>
+                                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                </div>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputCity" style="margin-left: 5px;">City</label>
+                                    <input type="text" class="form-control" id="inputCity" placeholder="City">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label for="inputState" style="margin-left: 5px;">State</label>
+                                    <select id="inputState" class="form-control">
+                                      <option selected>Choose...</option>
+                                      <option >Madhya Pradesh</option>
+                                      <option >Jharkhand</option>
+                                      <option >Maharashtra</option>
+                                      <option >Karnataka</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group col-md-2">
+                                    <label for="inputZip" style="margin-left: 5px;">Zip</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <!-- Permanent -->
+                      <mat-tab label="Permanent">
+                        <div class="marginTop20" style="margin-top: 40px;">
+                          <div class="shadow-lg p-3 mb-5 bg-white rounded">
+                            <div class="modal-content">
+                              <div class="modal-header   text-white">
+                                <h4 class="title"><i class="fa fa-pencil-alt"></i>Permanent Adress</h4>
+                                <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">×</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="form-group">
+                                  <label for="inputAddress" style="margin-left: 5px;">Address Line 1</label>
+                                  <input type="text" class="form-control" id="inputAddress" name="permAddLine1" formControlName="permAddLine1" placeholder="House No / Flat No">
+                                </div>
+                                <div class="has text-danger" *ngIf="createProfile.controls['permAddLine1'].invalid && (createProfile.controls['permAddLine1'].touched)">
+                                  <div [hidden]="!createProfile.controls['permAddLine1'].errors.required">
+                                    Adress Is Required
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputAddress2" style="margin-left: 5px;">Address Line 2</label>
+                                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                </div>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputCity" style="margin-left: 5px;">City</label>
+                                    <input type="text" class="form-control" id="inputCity" placeholder="City">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label for="inputState" style="margin-left: 5px;" style="margin-left: 5px;">State</label>
+                                    <select id="inputState" class="form-control">
+                                      <option selected>Choose...</option>
+                                      <option >Madhya Pradesh</option>
+                                      <option >Jharkhand</option>
+                                      <option >Maharashtra</option>
+                                      <option >Karnataka</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group col-md-2">
+                                    <label for="inputZip" style="margin-left: 5px;">Zip</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </mat-tab>
+                    </mat-tab-group>
+                  </mat-tab>
+                  <!-- Links -->
+                  <mat-tab label="Links">
+                    <div>
+                      <div style="float: right; margin-top: 20px;">
+                        <button type="button" class="btn btn-primary buttonForMadal" data-toggle="modal" data-target="#addLink">
+                          Add Links
+                        </button>
+                      </div>
+                      <div></div>
+                    </div>
+                  </mat-tab>
+                  <!-- Education -->
+                  <mat-tab label="Education">
+                    <div>
+                      <div style="float: right; margin-top: 20px;">
+                        <button type="button" class="btn btn-primary buttonForMadal" data-toggle="modal" data-target="#addEducation">
+                          Add Education
+                        </button>
+                      </div>
+                      <div></div>
+                    </div>
+                  </mat-tab>
+                  <!-- Skills -->
+                  <mat-tab label="Skills">
+                    <div>
+                      <div style="float: right; margin-top: 20px;">
+                        <button type="button" class="btn btn-primary buttonForMadal" data-toggle="modal" data-target="#addSkills">
+                          Add Skills
+                        </button>
+                      </div>
+                      <div></div>
+                    </div>
+                  </mat-tab>
+                  <!-- Projects -->
+                  <mat-tab label="Projects">
+                    <div>
+                      <div style="float: right; margin-top: 20px;">
+                        <button type="button" class="btn btn-primary buttonForMadal" data-toggle="modal" data-target="#exampleModal">
+                          Add Projects
+                        </button>
+                      </div>
+                      <div></div>
+                    </div>
+                  </mat-tab>
+                </mat-tab-group>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal for Projects -->
+        <div class="">
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" style="margin-left: 45px;" id="exampleModalLabel">New Project</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    <!-- Designation  -->
+                    <div class="row">
+                      <div class="col-md-4" style="margin-top: 15px; font-family: sans-serif; text-align: center;">
+                        <h5>Designation : </h5>
+                      </div>
+                      <div class="col-md-8">
+                        <mat-form-field  style="width: 450px;" appearance="outline">
+                          <mat-label>Designation</mat-label>
+                          <input matInput name="designation" formControlName="designation" placeholder="Designation">
+                        </mat-form-field>
+                        <div class="has text-danger" *ngIf="createProfile.controls['designation'].invalid && (createProfile.controls['designation'].touched)">
+                          <div [hidden]="!createProfile.controls['designation'].errors.required">
+                            Designation Is Required
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                    <!-- Organization  -->
+                    <div class="row">
+                      <div class="col-md-4" style="margin-top: 15px; font-family: sans-serif; text-align: center;">
+                        <h5>Organization : </h5>
+                      </div>
+                      <div class="col-md-8">
+                        <mat-form-field style="width: 450px;" appearance="outline">
+                          <mat-label>Organization</mat-label>
+                          <input matInput name="organization" formControlName="organization" placeholder="Organization">
+                        </mat-form-field>
+                        <div class="has text-danger" *ngIf="createProfile.controls['organization'].invalid && (createProfile.controls['organization'].touched)">
+                          <div [hidden]="!createProfile.controls['organization'].errors.required">
+                            Organization Is Required
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                    <!-- Project Name -->
+                    <div class="row">
+                      <div class="col-md-4" style="margin-top: 15px; font-family: sans-serif; text-align: center; ">
+                        <h5>Project Name : </h5>
+                      </div>
+                      <div class="col-md-8">
+                        <mat-form-field style="width: 450px;"  appearance="outline">
+                          <mat-label>Project Name</mat-label>
+                          <input matInput name="projectName" formControlName="projectName" placeholder="Project Name">
+                        </mat-form-field>
+                        <div class="has text-danger" *ngIf="createProfile.controls['projectName'].invalid && (createProfile.controls['projectName'].touched)">
+                          <div [hidden]="!createProfile.controls['projectName'].errors.required">
+                            Project Name Is Required
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Start Date -->
+                  <div class="" style="margin-left: 50px; margin-top: 40px">
+                    <span class="marginTop20" style="font-family: sans-serif;"><h5>Start Date :</h5></span>
+                    <div class="row" style="margin-left: 20px;">
+                      <mat-form-field>
+                        <mat-label>Select Year</mat-label>
+                        <mat-select>
+                          <mat-option *ngFor="let year of years" [value]="year.year">
+                            {{year.year}}
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                      <mat-form-field class="marginLeft60">
+                        <mat-label>Select Month</mat-label>
+                        <mat-select>
+                          <mat-option *ngFor="let month of months" [value]="month.month">
+                            {{month.month}}
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <!-- End Date -->
+                  <div class="" style="margin-left: 50px; margin-top: 40px; margin-bottom: 40px ">
+                    <span class="marginTop20" style="font-family: sans-serif;"><h5>End Date :</h5></span>
+                    <div class="row" style="margin-left: 20px;">
+                      <mat-form-field>
+                        <mat-label>Select Year</mat-label>
+                        <mat-select>
+                          <mat-option *ngFor="let year of years" [value]="year.year">
+                            {{year.year}}
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                      <mat-form-field class="marginLeft60">
+                        <mat-label>Select Month</mat-label>
+                        <mat-select>
+                          <mat-option *ngFor="let month of months" [value]="month.month">
+                            {{month.month}}
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <!-- Project Description -->
+                  <div class="col-md-6" style="margin-bottom: 40px ; margin-left: 40px;">
+                    <h5>Project Description : </h5>
+                    <mat-form-field class="mat-form-fieldWidth" style=" width: 440px;">
+                      <textarea matInput placeholder="Project Description"></textarea>
+                    </mat-form-field>
+                    <mat-hint>Maximum 500 characters</mat-hint>
+                  </div>
+                  <!-- Your Role -->
+                  <div class="col-md-6" style="margin-bottom: 40px ; margin-left: 40px;">
+                    <h5>Your Role : </h5>
+                    <mat-form-field class="mat-form-fieldWidth" style=" width: 440px;">
+                      <textarea matInput placeholder="Your Role"></textarea>
+                    </mat-form-field>
+                    <mat-hint>Maximum 500 characters</mat-hint>
+                  </div>
+                  <!-- Notice Period  -->
+                  <div class="row">
+                    <div class="col-md-4" style="margin-top: 15px; font-family: sans-serif; text-align: center;">
+                      <h5>Notice Period : </h5>
+                    </div>
+                    <div class="col-md-8">
+                      <mat-form-field  style="width: 450px;" appearance="outline">
+                        <mat-label>Notice Period</mat-label>
+                        <input matInput name="noticePeriod" formControlName="noticePeriod" placeholder="Notice Period">
+                      </mat-form-field>
+                      <div class="has text-danger" *ngIf="createProfile.controls['noticePeriod'].invalid && (createProfile.controls['noticePeriod'].touched)">
+                        <div [hidden]="!createProfile.controls['noticePeriod'].errors.required">
+                          Project Name Is Required
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    
+                    <!-- <div class="dropdown">
+                      <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown button
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </div> -->
+
+                    <!-- <mat-form-field style="width: 300px; color: red">
+                      <mat-label>Start Date</mat-label>
+                      <input matInput [matDatepicker]="picker3">
+                      <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
+                      <mat-datepicker #picker3 color="primary"></mat-datepicker>
+                    </mat-form-field>
+                    <mat-form-field style="width: 300px; color: red">
+                      <mat-label>End Date</mat-label>
+                      <input matInput [matDatepicker]="picker4">
+                      <mat-datepicker-toggle matSuffix [for]="picker4"></mat-datepicker-toggle>
+                      <mat-datepicker #picker4 color="primary"></mat-datepicker>
+                    </mat-form-field> -->
+                  <!-- </div> -->
+                  <!-- <div class="row">
+                    <div class="col-md-6">
+                      <div class="shadow p-3 mb-5 bg-white rounded">
+                        <div class="modal-content">
+                          <div class="modal-header   text-white">
+                            <h4 class="title">
+                            <i class="fa fa-pencil-alt"></i>Links</h4>
+                            <button type="button" class="close waves-effect waves-light" data-dismiss="modal"
+                              aria-label="Close">
+                              <span aria-hidden="true">×</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <mat-form-field  appearance="outline">
+                                <mat-label>Title</mat-label>
+                                <input matInput >
+                            </mat-form-field>
+                            <mat-form-field class="marginLeft20" appearance="outline">
+                              <mat-label>Abbreviation</mat-label>
+                              <input matInput >
+                            </mat-form-field>
+                            <mat-form-field  appearance="outline">
+                              <mat-label>Company Name</mat-label>
+                              <input matInput >
+                            </mat-form-field>
+                            <mat-form-field class="marginLeft20" appearance="outline">
+                              <mat-label>Description</mat-label>
+                              <input matInput >
+                            </mat-form-field>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="shadow p-3 mb-5 bg-white rounded">
+                        <div class="modal-content">
+                          <div class="modal-header   text-white">
+                            <h4 class="title">
+                            <i class="fa fa-pencil-alt"></i>Links</h4>
+                            <button type="button" class="close waves-effect waves-light" data-dismiss="modal"
+                              aria-label="Close">
+                              <span aria-hidden="true">×</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <mat-form-field  appearance="outline">
+                                <mat-label>Title</mat-label>
+                                <input matInput >
+                            </mat-form-field>
+                            <mat-form-field class="marginLeft20" appearance="outline">
+                              <mat-label>Abbreviation</mat-label>
+                              <input matInput >
+                            </mat-form-field>
+                            <mat-form-field  appearance="outline">
+                              <mat-label>Company Name</mat-label>
+                              <input matInput >
+                            </mat-form-field>
+                            <mat-form-field class="marginLeft20" appearance="outline">
+                              <mat-label>Description</mat-label>
+                              <input matInput >
+                            </mat-form-field>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+                  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+                  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal for Skills -->
+        <div class="">
+          <div class="modal fade" id="addSkills" tabindex="-1" role="dialog" aria-labelledby="addSkillsLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" style="margin-left: 45px;" id="addSkillsLabel">Add Skills</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row marginTop20" style="margin-top: 30px;">
+                    <div class="shadow p-3 mb-5 bg-white rounded" style="width: 90%; margin-left: 40px;">
+                      <div class="modal-content" style="height: 193px;">
+                        <div class="modal-header text-white">
+                          <h4 class="title">
+                          <i class="fa fa-pencil-alt"></i>Skill</h4>
+                          <button type="button" class="close waves-effect waves-light" data-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                          <div class="row modal-body" style="margin-top: 25px;">
+                            <mat-form-field class="" style="width: 35%; margin-left: 50px; ">
+                                <mat-label>Technology</mat-label>
+                                <mat-select [formControl]="courseController">
+                                  <mat-option>Course</mat-option>
+                                  <mat-option *ngFor="let course of courses" [value]="course">
+                                    {{course.course}}
+                                  </mat-option>
+                                </mat-select>
+                                <!-- <mat-error *ngIf="courseController.hasError('required')">Please choose the course</mat-error> -->
+                                <!-- <mat-hint>{{animalControl.value?.sound}}</mat-hint> -->
+                            </mat-form-field>
+                            <mat-form-field class="marginLeft20" style="width: 35%; margin-left: 80px; ">
+                              <mat-label>expertise</mat-label>
+                              <mat-select [formControl]="courseController">
+                                <mat-option>Select expertise</mat-option>
+                                <mat-option *ngFor="let course of courses" [value]="course">
+                                  {{course.course}}
+                                </mat-option>
+                              </mat-select>
+                              <!-- <mat-error *ngIf="courseController.hasError('required')">Please choose the course</mat-error> -->
+                              <!-- <mat-hint>{{animalControl.value?.sound}}</mat-hint> -->
+                            </mat-form-field>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="shadow p-3 mb-5 bg-white rounded" style="width: 90%; margin-left: 40px;">
+                      <div class="modal-content">
+                        <div class="modal-header text-white">
+                        <h4 class="title">
+                          <i class="fa fa-pencil-alt"></i>Used</h4>
+                        <button type="button" class="close waves-effect waves-light" data-dismiss="modal"
+                          aria-label="Close">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <mat-form-field class="" style="width: 35%; margin-left: 50px; margin-top: 20px;"  appearance="outline">
+                              <mat-label>Year</mat-label>
+                              <input matInput >
+                            </mat-form-field>
+                            <mat-form-field class="marginLeft20" style="width: 35%; margin-left: 80px; margin-top: 20px;"   appearance="outline">
+                              <mat-label>Month</mat-label>
+                              <input matInput >
+                            </mat-form-field>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal for Education -->
+        <div class="">
+          <div class="modal fade" id="addEducation" tabindex="-1" role="dialog" aria-labelledby="addEducationLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" style="margin-left: 45px;" id="addEducationLabel">Add Education</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row marginTop20" style="margin-top: 30px; margin-left: 50px;">
+                    <!-- Institute  -->
+                    <div class="row">
+                      <div class="col-md-4" style="margin-top: 15px; font-family: sans-serif; text-align: left;">
+                        <h5>Institute : </h5>
+                      </div>
+                      <div class="col-md-8">
+                        <mat-form-field  style="width: 450px; margin-left: 5px;" appearance="outline">
+                          <mat-label>Institute</mat-label>
+                          <input matInput name="instituteN" formControlName="institute" placeholder="Institute">
+                        </mat-form-field>
+                        <div class="has text-danger" *ngIf="createProfile.controls['institute'].invalid && (createProfile.controls['institute'].touched)">
+                          <div [hidden]="!createProfile.controls['institute'].errors.required">
+                            institute Is Required
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                    <!-- University  -->
+                    <div class="row">
+                      <div class="col-md-4" style="margin-top: 15px; font-family: sans-serif; text-align: left;">
+                        <h5>University : </h5>
+                      </div>
+                      <div class="col-md-8">
+                        <mat-form-field  style="width: 450px;" appearance="outline">
+                          <mat-label>University</mat-label>
+                          <input matInput name="universityN" formControlName="university" placeholder="University">
+                        </mat-form-field>
+                        <div class="has text-danger" *ngIf="createProfile.controls['university'].invalid && (createProfile.controls['university'].touched)">
+                          <div [hidden]="!createProfile.controls['university'].errors.required">
+                            University Is Required
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                    <!-- Course -->
+                    <div class="row">
+                      <div class="col-md-6" style="margin-top: 15px; font-family: sans-serif; text-align: left;">
+                        <h5>Course : </h5>
+                      </div>
+                      <div class="col-md-6">
+                        <mat-form-field class="" style="width: 175%; margin-left: 34px;">
+                          <mat-label>Course</mat-label>
+                          <mat-select [formControl]="courseController">
+                            <mat-option>Course</mat-option>
+                            <mat-option *ngFor="let course of courses" [value]="course">
+                              {{course.course}}
+                            </mat-option>
+                          </mat-select>
+                          <!-- <mat-error *ngIf="courseController.hasError('required')">Please choose the course</mat-error> -->
+                          <!-- <mat-hint>{{animalControl.value?.sound}}</mat-hint> -->
+                        </mat-form-field>
+                      </div>
+                    </div>
+                    <br>
+                    <!-- Major -->
+                    <div class="row">
+                      <div class="col-md-4" style="margin-top: 15px; font-family: sans-serif; text-align: left;">
+                        <h5>Major : </h5>
+                      </div>
+                      <div class="col-md-8">
+                        <mat-form-field  style="width: 450px; margin-left: 15px;" appearance="outline">
+                          <mat-label>Major</mat-label>
+                          <input matInput name="majorN" formControlName="major" placeholder="Major">
+                        </mat-form-field>
+                        <div class="has text-danger" *ngIf="createProfile.controls['major'].invalid && (createProfile.controls['major'].touched)">
+                          <div [hidden]="!createProfile.controls['major'].errors.required">
+                            Major Is Required
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                    <!-- Percent -->
+                    <div class="row">
+                        <div class="col-md-4" style="margin-top: 15px; font-family: sans-serif; text-align: left;">
+                          <h5>Percentage : </h5>
+                        </div>
+                        <div class="col-md-8">
+                          <mat-form-field  style="width: 450px; margin-left: 15px;" appearance="outline">
+                            <mat-label>Percentage</mat-label>
+                            <input matInput  type="number">
+                          </mat-form-field>
+                        </div>
+                    </div>
+                    <br>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal for Links -->
+        <div class="">
+          <div class="modal fade" id="addLink" tabindex="-1" role="dialog" aria-labelledby="addLinkLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" style="margin-left: 45px;" id="addLinkLabel">Add Links</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="marginTop20" style="margin-top: 30px; margin-left: 50px;">
+                    <!-- Links -->
+                    <div class="" style="margin-top: 15px; font-family: sans-serif; text-align: left;">
+                      <h5>Links : </h5>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <mat-form-field class="" style="width: 80%;">
+                          <mat-label>Links</mat-label>
+                          <mat-select [formControl]="courseController">
+                            <mat-option>Links</mat-option>
+                            <mat-option *ngFor="let course of courses" [value]="course">
+                              {{course.course}}
+                            </mat-option>
+                          </mat-select>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-md-8">
+                        <mat-form-field  style="width: 450px;" appearance="outline">
+                          <mat-label>Links</mat-label>
+                          <input matInput >
+                        </mat-form-field>
+                      </div>
+                    </div>
+                    <br>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- <div class="marginTop20">
+          <div>
+            <button class="box-opener" (click)="contact = !contact">Click To Add Adress</button>  
+          </div>
+          <div class="box" [class.opened]="contact">
+              
+          </div>
+        </div> -->
+        </div>
+        <div>
+          <!-- Button -->
+        <div class="shadow p-3 mb-5 bg-white rounded">
+          <div class="modal-content">
+            <div class="modal-header text-white">
+              <h4 class="title"><i class="fa fa-pencil-alt"></i>Save The Profile</h4>
+              <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body" >
+              <div style="float: right">
+                <button type="button" class="btn btn-secondary" >Close</button>
+                <button type="button" class="btn btn-success" (click)="saveTheNewProfile()">Save New Profile</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="card-footer text-white bg-secondary mb-3" style="height: 250px;">
+    <div class="row">
+      <div class="col-md-4 textAlignLeft">
+        <div class="paddingTop20">
+          <ol>
+            <li>Create Profile</li>
+            <li>Update Profile</li>
+            <li>Delete Profile</li>
+            <li>View Profile</li>
+          </ol>
+        </div>
+      </div>
+      <div class="col-md-4 textAlignLeft">
+        <div class="paddingTop20">
+          <ol>
+            <li>Login</li>
+            <li>Register</li>
+            <li>My Profile</li>
+            <li>View Profile</li>
+          </ol>
+        </div>
+      </div>
+      <div class="col-md-4 textAlignLeft">
+        <div class="paddingTop20">
+          <div>
+            <div class="row">
+              <div>
+                <strong>Mobile : &nbsp;</strong>
+              </div>
+              <div>
+                <p>
+                  8123212401
+                </p>
+                <p>
+                  8123212401
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div>
+                <strong>Email : &nbsp;</strong>
+              </div>
+              <div>
+                <p>
+                  vikram.kumar2013@gmail.com
+                </p>
+                <p>
+                  vikramku.mahto2015@gmail.com
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div>
+                <strong>Social Media : &nbsp;&nbsp;</strong>
+              </div>
+              <div>
+                <a href="https://github.com/vikram2015" target="_blank"><img src="../../assets/upload/img/gitHub.png" height= "30" width= "30" alt="git hub"></a>
+                <a href="https://www.linkedin.com/feed/" target="_blank"><img src="../../assets/upload/img/linkdin1.jpg" height= "30" width= "30"></a>
+                <a href=""><img src="../../assets/upload/img/fbIcon1.png" height= "30" width= "30"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

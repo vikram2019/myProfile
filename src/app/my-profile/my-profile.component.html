@@ -1,0 +1,590 @@
+
+
+
+
+<!-- <div class="container">
+    <form novalidate >
+        <div>
+            <div class="row name">
+                <div class="col-md-4 "><h3>{{name}}</h3></div>
+                <div class="col-md-4"><h3>{{email}}</h3></div>
+                <div class="col-md-4"><h3>{{alternateEmail}}</h3></div>
+                <div class="col-md-4"><img src="../../assets/upload/img/small1.jpg"></div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-4"><h3>{{address}}</h3></div>
+                <div class="col-md-4 "><h3>{{dateOfBirth}}</h3></div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-4 "><h3>{{mobile}}</h3></div>
+                <div class="col-md-4"><h3>{{address}}</h3></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 "><h3>{{alternateNumber}}</h3></div>
+            </div>
+        </div>
+        <hr/>
+        <div>
+            <div class="row objective">
+                    <div class="form-group">
+                        <label for="objective">Objective :</label>
+                    </div>
+                <div class="col-md-10">
+                    <h6><b>{{profileObjective}}</b></h6>
+                </div>
+            </div>
+            <div class="row summary">
+                <div class="form-group">
+                    <label for="objective">Objective :</label>
+                </div>
+                <div class="col-md-10">
+                    <h6><b>{{professionalSummary}}</b></h6>
+                </div>
+            </div>
+        </div>
+      </form>
+</div> -->
+
+<div class="card text-center">
+    <!-- <div class="card-header">
+        Featured
+    </div> -->
+    <div class="card-body">
+        <div class="container">
+            <form novalidate >
+                <div class="row">
+                    <div class="col-md-3 shadow sideBar marginTop20" style="background-color: rgb(221, 234, 247);" >
+                        <div>
+                            <img src="../../assets/upload/img/small.jpg" class="profilePic">
+                        </div>
+        
+                        <div>
+                            <div class=" row colorIndigoRed marginTop15 paddingLeft15">
+                                <span><i class="fa fa-address-card-o address-card" aria-hidden="true"></i></span>
+                                <span class="paddingLeft10"><h4><strong>C</strong>ontacts :</h4></span>
+                            </div>
+            
+                            <!-- contact -->
+                            <div class="row paddingLeft20 paddingTop20" style="padding-left: 40px; padding-top: 30px;">
+                                <div class="row colorDodgerblue">
+                                    <span ><i class="fa fa-phone" aria-hidden="true"></i></span>
+                                    <span class="paddingLeft10"><strong>Phone : </strong></span>
+                                </div>
+                                <div class="paddingLeft20">
+                                    <div><strong>{{mobile}}</strong></div>
+                                    <div><strong>{{alternateNumber}}</strong></div>
+                                </div>
+                            </div>
+            
+                            <!-- Email -->
+                            <div class="paddingTop10" style="padding-left: 30px; padding-top: 30px;">
+                                <div class="row colorDodgerblue">
+                                    <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                                    <span class="paddingLeft10"><strong>Email : </strong></span>
+                                </div>
+                                <div style="margin-left: -15px;">
+                                    <div><strong>{{email}}</strong></div>
+                                    <div><strong>{{alternateEmail}}</strong></div>
+                                </div>
+                            </div>
+                            <!-- Adress -->
+                            <div class="row" style="padding-top: 30px; padding-bottom: 30px;">
+                                <div class="row paddingTop20 colorDodgerblue" style="padding-left: 40px;">
+                                    <span><i class="material-icons outlined">home</i></span>
+                                    <span><strong>Adress : </strong></span>
+                                </div>
+                                <div class="paddingLeft20 paddingTop20">
+                                    <div class="textAlignLeft">
+                                        <div><strong>{{adressLine1}},</strong></div>
+                                        <div><strong>{{adressLine2}},</strong></div>
+                                        <div><strong>{{adressCity}},</strong></div>
+                                        <div><strong>{{adressState}},</strong></div>
+                                        <div><strong>{{adressPincode}}</strong></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Skills -->
+                        <div>
+                            <div class="row colorIndigoRed paddingTop20 paddingLeft10">
+                                <span><i class="material-icons ballotIcon">ballot</i></span>
+                                <span class="paddingLeft10"><h4><strong>S</strong>kills : </h4></span>
+                            </div>
+                            <div class="paddingTop20" style="text-align: left">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="angular colorSkills">
+                                            <strong>Angular JS : </strong>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 paddingTop5">
+                                        <div>
+                                            <ngb-progressbar animated="true" [showValue]="true" type="success" [value]="80" [max]="100"></ngb-progressbar>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="javascript colorSkills">
+                                            <strong>JavaScript : </strong>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 paddingTop5">
+                                        <div>
+                                            <ngb-progressbar animated="true" [showValue]="true" type="success" [value]="80" [max]="100"></ngb-progressbar>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="angular colorSkills">
+                                            <strong>Angular : </strong>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 paddingTop5">
+                                        <div>
+                                            <ngb-progressbar animated="true" [showValue]="true" type="success" [value]="70" [max]="100"></ngb-progressbar>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-6 colorSkills">
+                                        <div class="meanStack">
+                                            <strong>Mean Stack : </strong>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 paddingTop5">
+                                        <div>
+                                            <ngb-progressbar animated="true" [showValue]="true" type="success" [value]="70" [max]="100"></ngb-progressbar>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="express colorSkills">
+                                            <strong>Express JS : </strong>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 paddingTop5">
+                                        <div>
+                                            <ngb-progressbar animated="true" [showValue]="true" type="success" [value]="60" [max]="100"></ngb-progressbar>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="node colorSkills">
+                                            <strong>Node JS : </strong>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 paddingTop5">
+                                        <div>
+                                            <ngb-progressbar animated="true" [showValue]="true" type="success" [value]="80" [max]="100"></ngb-progressbar>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="mongo colorSkills">
+                                            <strong>Mongo DB : </strong>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 paddingTop5">
+                                        <div>
+                                            <ngb-progressbar animated="true" [showValue]="true" type="success" [value]="80" [max]="100"></ngb-progressbar>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="git colorSkills">
+                                            <strong>GIT HUB : </strong>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 paddingTop5">
+                                        <div>
+                                            <ngb-progressbar animated="true" [showValue]="true" type="success" [value]="80" [max]="100"></ngb-progressbar>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="agile colorSkills">
+                                            <strong>Agile : </strong>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 paddingTop5">
+                                        <div>
+                                            <ngb-progressbar animated="true" [showValue]="true" type="success" [value]="80" [max]="100"></ngb-progressbar>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="ubuntu colorSkills">
+                                            <strong>Ubuntu : </strong>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 paddingTop5">
+                                        <div>
+                                            <ngb-progressbar animated="true" [showValue]="true" type="success" [value]="80" [max]="100"></ngb-progressbar>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="window colorSkills">
+                                            <strong>Window 10 : </strong>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 paddingTop5">
+                                        <div>
+                                            <ngb-progressbar animated="true" [showValue]="true" type="success" [value]="80" [max]="100"></ngb-progressbar>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="trello colorSkills">
+                                            <strong>Trello : </strong>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 paddingTop5">
+                                        <div>
+                                            <ngb-progressbar animated="true" [showValue]="true" type="success" [value]="80" [max]="100"></ngb-progressbar>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="mantis colorSkills">
+                                            <strong>Mantis : </strong>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 paddingTop5">
+                                        <div>
+                                            <ngb-progressbar animated="true" [showValue]="true" type="success" [value]="80" [max]="100"></ngb-progressbar>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="visualStudio colorSkills">
+                                            <strong>Visual Studio : </strong>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 paddingTop5">
+                                        <div>
+                                            <ngb-progressbar animated="true" [showValue]="true" type="success" [value]="80" [max]="100"></ngb-progressbar>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="BitBucket colorSkills">
+                                            <strong>Bit Bucket : </strong>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 paddingTop5">
+                                        <div>
+                                            <ngb-progressbar animated="true" [showValue]="true" type="success" [value]="80" [max]="100"></ngb-progressbar>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="gitLab colorSkills">
+                                            <strong>Git Lab : </strong>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 paddingTop5">
+                                        <div>
+                                            <ngb-progressbar animated="true" [showValue]="true" type="success" [value]="80" [max]="100"></ngb-progressbar>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-9 marginTop20">
+                        <div class="shadow" style="margin-left: 5px;">
+                            <!-- Heading -->
+                            <div class="" style="background-color:cadetblue; margin-left: 20px;">
+                                <div class="row paddingLeft10">
+                                    <div class="headingName col-md-7 textAlignLeft" style="color: whitesmoke">
+                                        <h1>{{name}}</h1>
+                                        <h2>{{post}}</h2>
+                                    </div>
+                                    <div class="col-md-5 floatRight">
+                                        <a *ngIf="gitLink != undefined" href={{gitLink}} target="_blank"><img src="../../assets/upload/img/gitHub.png" class="gitHub" alt="git hub"></a>
+                                        <a *ngIf="linkDinLink != undefined" href={{linkDinLink}} target="_blank"><img src="../../assets/upload/img/linkdin1.jpg" class="linkDin"></a>
+                                        <a href=""><img src="../../assets/upload/img/fbIcon1.png" class="fbIcon"></a>
+                                    </div>
+                                </div>
+                                <div class="textAlignJustify paddingLeft10 paddingRight10" style="color: whitesmoke">
+                                    <p class="arialHelventicSansSerif title">
+                                            {{profileObjective}}
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Work -->
+                            <div class="marginTop20 textAlignLeft" style="margin-top: 25px; margin-left: 20px;">
+                                <div class="row paddingLeft10 colorIndigoRed">
+                                    <span><i class="material-icons">work</i></span>
+                                    <span class="marginLeft20" ><h3>WORK EXPERIENCE : </h3></span>
+                                </div>
+                                <div>
+                                    <!-- GST -->
+                                    <div>
+                                        <!-- Heading -->
+                                        <div class="row paddingLeft15 marginTop20 colorDodgerblue" >
+                                            <h4>I<sup>ST</sup> Project : </h4>
+                                            &nbsp;&nbsp;<h4>" <u>G.S.T.</u> " &nbsp;<u>(Goods And Service Tax)</u></h4>
+                                        </div>
+                                        <!-- Description -->
+                                        <div class="marginTop20">
+                                            <span class="colorSkills"><strong>Description :</strong></span>
+                                            <p class="arialHelventicSansSerif marginTop10">
+                                                GST Suvidha Provider (GSP), It can provide the interface and convenience via desktop, mobile, other interfaces to interact with the GST system for GSTR filing.
+                                            </p>
+                                        </div>
+                                        <!-- Responsibility -->
+                                        <div>
+                                            <span class="colorSkills"><strong>Responsibility :</strong></span>
+                                            <ul class="a">
+                                                <li>
+                                                    Developing the Front-End and Back-End code as per the requirements given.
+                                                </li>
+                                                <li>
+                                                    Unit testing of Written Code
+                                                </li>
+                                                <li>
+                                                    Push the code in Git for Deployment
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <!-- FollowClass -->
+                                    <div>
+                                        <!-- Heading -->
+                                        <div class="row paddingLeft15 marginTop20 colorDodgerblue">
+                                            <h4>II<sup>nd</sup> Project : </h4>
+                                            &nbsp;&nbsp;<h4><u>FollowClass Application</u></h4>
+                                        </div>
+                                        <!-- Description -->
+                                        <div class="marginTop20">
+                                            <span class="colorSkills"><strong>Description :</strong></span>
+                                            <p class="arialHelventicSansSerif marginTop10">
+                                                It is used by Schools and Institutes for their management. 
+                                                There are multiple roles Admin, Teacher, Parent, Student.
+                                                Multiple features are there in application like posts, calender events, fee, online examinations and so on.
+                                            </p>
+                                        </div>
+                                        <!-- Responsibility -->
+                                        <div>
+                                            <span class="colorSkills"><strong>Responsibility :</strong></span>
+                                            <ul class="a">
+                                                <li>
+                                                    Developing the Front-End and Back-End code as per the requirements given.
+                                                </li>
+                                                <li>
+                                                    Unit testing of Written Code
+                                                </li>
+                                                <li>
+                                                    Push the code in Git for Deployment
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <!-- Pcloudy -->
+                                    <div>
+                                        <!-- Heading -->
+                                        <div class="row paddingLeft15 marginTop20 colorDodgerblue">
+                                            <h4>III<sup>rd</sup> Project : </h4>
+                                            &nbsp;&nbsp;<h4><u>Pcloudy</u></h4>
+                                        </div>
+                                        <!-- Description -->
+                                        <div class="marginTop20">
+                                            <span class="colorSkills"><strong>Description :</strong></span>
+                                            <p class="arialHelventicSansSerif marginTop10">
+                                                It is an Mobile application Testing Tool. 
+                                                It is used by different Organization for testing their mobile applications before release to users. 
+                                                Here an organization can test the efficiency, battery consumption, manually and automation testing.
+                                            </p>
+                                        </div>
+                                        <!-- Responsibility -->
+                                        <div>
+                                            <span class="colorSkills"><strong>Responsibility :</strong></span>
+                                            <ul class="a">
+                                                <li>
+                                                    Developing the Front-End and Back-End code as per the requirements given.
+                                                </li>
+                                                <li>
+                                                    Unit testing of Written Code
+                                                </li>
+                                                <li>
+                                                    Push the code in Git for Deployment
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Education -->
+                            <div class="marginTop20 textAlignLeft" style="margin-top: 20px; margin-left: 20px;">
+                                <div class="row marginTop20 paddingLeft10 colorIndigoRed">
+                                    <span><i class="fa fa-graduation-cap graduation-cap" aria-hidden="true"></i></span>
+                                    <span class="marginLeft20 marginBottom20"><h3>EDUCATION : </h3></span>
+                                </div>
+                                <div>
+                                    <div>
+                                        <span class="colorDodgerblue marginTop20"><h4><u>Bachelor Of Engineering</u></h4></span>
+                                        <div>
+                                            <div  class="row">
+                                                <span class="paddingLeft15 paddingTop10 colorSkills"><h5>Major : </h5></span>
+                                                &nbsp;<span class="paddingTop10"><b>Computer Science</b></span>
+                                            </div>
+                                            <div class="row">
+                                                <span class="paddingLeft15 colorSkills"><h5>Institute : </h5></span>
+                                                <span>&nbsp;<strong>NRI</strong>&nbsp;<b>I</b>nstitute of <b>S</b>cience and <b>T</b>echnology</span>
+                                            </div>
+                                            <div class="row">
+                                                <span class="paddingLeft15 colorSkills"><h5>Percentage : </h5></span><span></span>
+                                                &nbsp;<strong>64 %</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <span class="colorDodgerblue marginTop20"><h4><u>P.U.</u></h4></span>
+                                        <div class="row">
+                                            <span class="paddingLeft15 marginTop10 colorSkills"><h5>Major :</h5></span>
+                                            &nbsp;<span class="paddingTop10"><b>Mathematics</b></span>
+                                        </div>
+                                        <div class="row">
+                                            <span class="paddingLeft15 colorSkills"><h5>Institute : </h5></span>
+                                            <span>&nbsp;<strong>Jagreeti</strong> Higher Secondary School</span>
+                                        </div>
+                                        <div class="row">
+                                            <span class="paddingLeft15 colorSkills"><h5>Percentage : </h5></span>
+                                            &nbsp;<strong>66 %</strong>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <span class="colorDodgerblue marginTop20"><h4><u>High School</u></h4></span>
+                                        <div class="row">
+                                            <span class="paddingLeft15 marginTop10 colorSkills"><h5>Major :</h5></span>
+                                            &nbsp;<span class="paddingTop10"><b>Science</b></span>
+                                        </div>
+                                        <div class="row">
+                                            <span class="paddingLeft15 colorSkills"><h5>Institute : </h5></span>
+                                            <span>&nbsp;<strong>Little Flower</strong> High School</span>
+                                        </div>
+                                        <div class="row">
+                                            <span class="paddingLeft15 colorSkills"><h5>Percentage : </h5></span>
+                                            &nbsp;<strong>64 %</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="card-footer text-white bg-secondary mb-3" style="height: 250px;">
+        <div class="row">
+            <div class="col-md-4 textAlignLeft">
+                <div class="paddingTop20">
+                    <ol>
+                        <li>Create Profile</li>
+                        <li>Update Profile</li>
+                        <li>Delete Profile</li>
+                        <li>View Profile</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="col-md-4 textAlignLeft">
+                <div class="paddingTop20">
+                    <ol>
+                        <li>Login</li>
+                        <li>Register</li>
+                        <li>My Profile</li>
+                        <li>View Profile</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="col-md-4 textAlignLeft">
+                <div class="paddingTop20">
+                    <div>
+                        
+                        <div class="row">
+                            <div>
+                                <strong>Mobile : &nbsp;</strong>
+                            </div>
+                            <div>
+                                <p>
+                                    8123212401
+                                </p>
+                                <p>
+                                    8123212401
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <strong>Email : &nbsp;</strong>
+                            </div>
+                            <div>
+                                <p>
+                                    vikram.kumar2013@gmail.com
+                                </p>
+                                <p>
+                                    vikramku.mahto2015@gmail.com
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <strong>Social Media : &nbsp;&nbsp;</strong>
+                            </div>
+                            <div>
+                                <a href="https://github.com/vikram2015" target="_blank"><img src="../../assets/upload/img/gitHub.png" height= "30" width= "30" alt="git hub"></a>
+                                <a href="https://www.linkedin.com/feed/" target="_blank"><img src="../../assets/upload/img/linkdin1.jpg" height= "30" width= "30"></a>
+                                <a href=""><img src="../../assets/upload/img/fbIcon1.png" height= "30" width= "30"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Name -->
+<div class="shadow p-3 mb-5 bg-white rounded">
+    hi hrello
+  </div>

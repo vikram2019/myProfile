@@ -1,1 +1,200 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    color: colorPapayawhip
+    }
+
+    /* 
+    Margin 10
+    */
+    .marginTop10{
+        margin-top: 10px;
+    }
+    .marginBottom10{
+        margin-bottom: 10px;
+    }
+    .marginRight10{
+        margin-right: 10px;
+    }
+    .marginLeft10{
+        margin-left: 10px;
+    }
+
+    /* 
+    Margin15
+    */
+    .marginTop15{
+        margin-top: 15px;
+    }
+    .marginBottom15{
+        margin-bottom: 15px;
+    }
+    .marginRight15{
+        margin-right: 15px;
+    }
+    .marginLeft15{
+        margin-left: 15px;
+    } 
+    
+    /* 
+    Margin 20
+    */
+    .marginTop20{
+        margin-top: 20px;
+    }
+    .marginBottom20{
+        margin-bottom: 20px;
+    }
+    .marginRight20{
+        margin-right: 20px;
+    }
+    .marginLeft20{
+        margin-left: 20px;
+    }
+
+    
+    /* 
+        Padding-Top
+    */
+    .paddingTop5{
+        padding-top: 5px;
+    }
+    .paddingTop10{
+        padding-top: 10px;
+    }
+    .paddingTop15{
+        padding-top: 15px;
+    }
+    .paddingTop20{
+        padding-top: 20px;
+    }
+
+    /* 
+        Padding-Bottom
+    */
+    .paddingBottom5{
+        padding-bottom: 5px;
+    }
+    .paddingBottom10{
+        padding-bottom: 10px;
+    }
+    .paddingBottom15{
+        padding-bottom: 15px;
+    }
+    .paddingBottom20{
+        padding-bottom: 20px;
+    }
+
+    /* 
+        Padding-Right
+    */
+    .paddingRight5{
+        padding-right: 5px;
+    }
+    .paddingRight10{
+        padding-right: 10px;
+    }
+    .paddingRight15{
+        padding-right: 15px;
+    }
+    .paddingRight20{
+        padding-right: 20px;
+    }
+
+    /* 
+        Padding-Left
+    */
+    .paddingLeft5{
+        padding-left: 5px;
+    }
+    .paddingLeft10{
+        padding-left: 10px;
+    }
+    .paddingLeft15{
+        padding-left: 15px;
+    }
+    .paddingLeft20{
+        padding-left: 20px;
+    }
+
+    /* 
+        color red
+    */
+
+    .colorRed{
+        color: red;
+    }
+    .colorTurquoise{
+        color:turquoise;
+    }
+    .colorWhitesmoke{
+        color:whitesmoke;
+    }
+    .colorYellow{
+        color:yellow;
+    }
+    .colorAliceblue{
+        color:aliceblue;
+    }
+    .colorPalegoldenrod{
+        color:#EEE8AA;
+    }
+    .colorPapayawhip{
+        color:#FFEFD5;
+    }
+    .colorLawngreen{
+        color:#7CFC00;
+    }
+    .colorLime{
+        color:#00FF00;
+    }
+    .colorSpringgreen{
+        color:#00FF7F;
+    }
+    .colorCyan{
+        color: cyan;
+    }
+    .colorDodgerblue{
+        color: dodgerblue;
+    }
+    .colorCadetblue{
+        color: cadetblue;
+    }
+    .colorRoyalblue{
+        color: royalblue;
+    }
+    .colorPurple{
+        color: purple;
+    }
+    .colorIndigo{
+        color: indigo;
+    }
+    .colorIndigoRed{
+        color: indianred;
+    }
+    .colorLavender{
+        color: lavender;
+    }
+    .colorSkills{
+        color: rgb(29, 184, 176);
+    }
+
+    /* Font Family */
+    .monospaceFont{
+        font-family: "Courier New", Courier, monospace;
+    }
+    .arialHelventicSansSerif{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .cdk-global-overlay-wrapper, .cdk-overlay-container {
+        z-index: 99999 !important;
+        /* margin-left: 60px; */
+        margin-top: 60px;
+      }
+      /* .cdk-overlay-pane{
+        top: 144.5px;
+      } */

@@ -1,0 +1,169 @@
+.name{
+    color: aquamarine;
+    margin-top: 20px;
+}
+
+.objective{
+    margin-top: 20px;
+}
+
+.summary{
+    margin-top: 20px;
+}
+
+mat-slider {
+    width: 300px;
+  }
+
+  .example-h2 {
+    margin: 10px;
+  }
+  
+  .example-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 60px;
+  }
+  
+  .example-margin {
+    margin: 10px;
+  }
+  
+  .mat-slider-horizontal {
+    width: 300px;
+  }
+  
+  .mat-slider-vertical {
+    height: 300px;
+  }
+
+  .sideBar{
+      /* margin-bottom: 50px; */
+  }
+  /* .mean{
+      width: 51px;
+  } */
+  img{
+    /* width: 200px; */
+  }
+  .title{
+    color: lightgoldenrodyellow;
+  }
+
+  
+
+  .headingName{
+    text-align: center;
+    text-emphasis: initial;
+  }
+
+  .textAlignLeft{
+    text-align: left;
+  }
+  .textAlignJustify{
+    text-align: justify;
+  }
+
+  .workIcon{
+    color: aqua;
+  }
+
+  /* ul.a {
+    list-style-type: square ;
+    list-style-position: inside;
+  } */
+
+  /* ul li::before{
+    color: red;
+  } */
+  
+ul {
+  list-style: none; /* Remove HTML bullets */
+  padding: 0;
+  margin: 0;
+}
+  ul li::before {
+  content: "\25BA";
+  color: red;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  /* margin-left: -1em; */
+  
+}
+
+  ul li{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* ul {
+  list-style-image: square ;
+} */
+/* 
+.bullets{
+  
+  width: 3px;
+  height: 3px;
+  /* border: 1px solid blue; 
+    
+} */
+
+.material-icons{
+  font-size: xx-large;
+}
+.graduation-cap{
+  font-size: xx-large;
+}
+.address-card{
+  font-size: xx-large;
+}
+.ballotIcon{
+  font-size: 36px;
+}
+
+.profilePic{
+  width: 181px;
+  /* margin-left: 30px; */
+  border-radius: 50%;
+  margin-top: 5px;
+}
+.fbIcon{
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  float: right;
+  margin-top: 5px;
+}
+.linkDin{
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  float: right;
+  margin-top: 5px;
+}
+.gitHub{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  float: right;
+  margin-top: 10px;
+}
+.floatRight{
+  float: right;
+}
+
+.radioButton{
+  color: red;
+  background-color: orange;
+}
+
+ngb-progressbar {
+  margin-top: 5rem;
+}
+
+ol li{
+  list-style-type: none;
+  color:rgb(248, 246, 246);
+  padding: 5px 5px 5px;
+}
