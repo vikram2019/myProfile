@@ -8,7 +8,7 @@ import { CreateProfileComponent } from './profile/create-profile/create-profile.
 const routes: Routes = [
   { path: 'myProfile', component:  MyProfileComponent},
   { path: 'createProfile', component:  CreateProfileComponent},
-  // { path: '',redirectTo : 'myProfile',pathMatch:'full'}
+  { path: '',redirectTo : 'myProfile',pathMatch:'full'}
 ];
 
 @NgModule({
