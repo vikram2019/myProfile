@@ -34,11 +34,11 @@ app.use(express.static(path.join(__dirname, '/dist/vikramProfile')));
 // app.use('/course', courseRoutes);
 
 
-app.use((data,req, res, next) => {
-    const error = new Error(data);
-    error.status = 404;
-    next(error);
-});
+// app.use((data,req, res, next) => {
+//     const error = new Error(data);
+//     error.status = 404;
+//     next(error);
+// });
 
 //This is the Default Route for Angular 6
 app.get('*', function (req, res, next) {
