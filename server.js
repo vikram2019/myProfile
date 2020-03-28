@@ -1,10 +1,10 @@
 let express = require('express');
 let bodyParser = require('body-parser');
-let nodemon = require('nodemon');
-let morgan = require('morgan');
-let cors = require('cors');
+// let nodemon = require('nodemon');
+// let morgan = require('morgan');
+// let cors = require('cors');
 let path = require('path');
-let mongoose = require('mongoose');
+// let mongoose = require('mongoose');
 
 // let skillRoutes = require('./backend/skills/skillsRoute/skillsRoutes');
 // let educationRoutes = require('./backend/education/educationRoute/educationRoutes');
@@ -20,7 +20,7 @@ let app = express();
 // app.use(morgan(dev));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended : true}));
-app.use(cors());
+// app.use(cors());
 //This is the static file for Angular 8
 app.use(express.static(path.join(__dirname, '/dist/vikramProfile')));
 
