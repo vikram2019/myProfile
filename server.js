@@ -45,13 +45,13 @@ app.get('*', function (req, res, next) {
     res.sendFile(path.join(__dirname));
 })
 
-app.listen(config.port, (err)=>{
-    if(err){
-        console.log('Error in connecting in database');
-    }else{
-        console.log('Server connected at port '+config.port);
-    }
-});
+// app.listen(config.port, (err)=>{
+//     if(err){
+//         console.log('Error in connecting in database');
+//     }else{
+//         console.log('Server connected at port '+config.port);
+//     }
+// });
 
 // mongoose.connect(config.database, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify : false });
 // mongoose.connection.on('Connected', (err)=>{
