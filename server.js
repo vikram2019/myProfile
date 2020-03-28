@@ -6,14 +6,14 @@ let cors = require('cors');
 let path = require('path');
 let mongoose = require('mongoose');
 
-let skillRoutes = require('./backend/skills/skillsRoute/skillsRoutes');
-let educationRoutes = require('./backend/education/educationRoute/educationRoutes');
-let profile = require('./backend/profile/profileRoutes/profileRoutes');
-let config = require('./config/config');
-let yearRoutes = require('./backend/miscellaneous/routes/yearsRoutes');
-let monthRoutes = require('./backend/miscellaneous/routes/monthRoutes');
-let linkRoutes = require('./backend/miscellaneous/routes/linkRoutes');
-let courseRoutes = require('./backend/miscellaneous/routes/courseRoutes');
+// let skillRoutes = require('./backend/skills/skillsRoute/skillsRoutes');
+// let educationRoutes = require('./backend/education/educationRoute/educationRoutes');
+// let profile = require('./backend/profile/profileRoutes/profileRoutes');
+// let config = require('./config/config');
+// let yearRoutes = require('./backend/miscellaneous/routes/yearsRoutes');
+// let monthRoutes = require('./backend/miscellaneous/routes/monthRoutes');
+// let linkRoutes = require('./backend/miscellaneous/routes/linkRoutes');
+// let courseRoutes = require('./backend/miscellaneous/routes/courseRoutes');
 
 let app = express();
 
@@ -25,13 +25,13 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, '/dist/vikramProfile')));
 
 
-app.use('/skills', skillRoutes);
-app.use('/education', educationRoutes);
-app.use('/profile', profile);
-app.use('/year', yearRoutes);
-app.use('/month', monthRoutes);
-app.use('/link', linkRoutes);
-app.use('/course', courseRoutes);
+// app.use('/skills', skillRoutes);
+// app.use('/education', educationRoutes);
+// app.use('/profile', profile);
+// app.use('/year', yearRoutes);
+// app.use('/month', monthRoutes);
+// app.use('/link', linkRoutes);
+// app.use('/course', courseRoutes);
 
 
 app.use((data,req, res, next) => {
@@ -53,11 +53,11 @@ app.listen(config.port, (err)=>{
     }
 });
 
-mongoose.connect(config.database, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify : false });
-mongoose.connection.on('Connected', (err)=>{
-    if(err){
-        console.log('Error in connecting the database '+err);
-    }else{
-        console.log('Connected to database at port 27017');
-    }
-});
+// mongoose.connect(config.database, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify : false });
+// mongoose.connection.on('Connected', (err)=>{
+//     if(err){
+//         console.log('Error in connecting the database '+err);
+//     }else{
+//         console.log('Connected to database at port 27017');
+//     }
+// });
