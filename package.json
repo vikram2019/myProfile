@@ -1,15 +1,15 @@
 {
   "name": "vikram-profile",
   "version": "0.0.0",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "node server",
-    "start:dev": "nodemon server",
-    "build": "ng build --prod",
+    "start": "nodemon server",
+    "build": "ng build",
+    "postinstall": "ng build --aot --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "postinstall": "ng build --aot --target=production"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
