@@ -42,7 +42,10 @@
     "zone.js": "~0.9.1",
     "typescript": "~3.5.3",
     "express": "*",
-    "body-parser": "*"
+    "body-parser": "*",
+    "nodemon": "*",
+    "morgan": "*",
+    "cors": "*",
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.802.2",

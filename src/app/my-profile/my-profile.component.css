@@ -168,6 +168,10 @@ ol li{
   padding: 5px 5px 5px;
 }
 
+.container{
+  width: 100%;
+}
+
 @media only screen and (min-width: 480px) {
   
 }
@@ -187,6 +191,8 @@ ol li{
 @media only screen and (min-width: 1280px) {
   
 }
+
+
 
 
 
