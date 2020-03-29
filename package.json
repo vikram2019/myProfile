@@ -45,7 +45,7 @@
     "body-parser": "*",
     "nodemon": "*",
     "morgan": "*",
-    "cors": "*",
+    "cors": "*"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.802.2",
