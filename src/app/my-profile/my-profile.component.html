@@ -55,7 +55,7 @@
         <div class="container">
             <form novalidate >
                 <div class="row">
-                    <div class="col-md-3 shadow sideBar marginTop20" style="background-color: rgb(221, 234, 247);" >
+                    <div class="col-md-3 skills shadow sideBar marginTop20" style="background-color: rgb(221, 234, 247);" >
                         <div>
                             <img src="../../assets/upload/img/small.jpg" class="profilePic">
                         </div>
@@ -325,7 +325,7 @@
                         </div>
                     </div>
         
-                    <div class="col-md-9 marginTop20">
+                    <div class="col-md-9 details marginTop20">
                         <div class="shadow" style="margin-left: 5px;">
                             <!-- Heading -->
                             <div class="" style="background-color:cadetblue; margin-left: 20px;">
@@ -334,7 +334,7 @@
                                         <h1>{{name}}</h1>
                                         <h2>{{post}}</h2>
                                     </div>
-                                    <div class="col-md-5 floatRight">
+                                    <div class="col-md-5 links floatRight">
                                         <a *ngIf="gitLink != undefined" href={{gitLink}} target="_blank"><img src="../../assets/upload/img/gitHub.png" class="gitHub" alt="git hub"></a>
                                         <a *ngIf="linkDinLink != undefined" href={{linkDinLink}} target="_blank"><img src="../../assets/upload/img/linkdin1.jpg" class="linkDin"></a>
                                         <a href=""><img src="../../assets/upload/img/fbIcon1.png" class="fbIcon"></a>
@@ -347,7 +347,7 @@
                                 </div>
                             </div>
                             <!-- Work -->
-                            <div class="marginTop20 textAlignLeft" style="margin-top: 25px; margin-left: 20px;">
+                            <div class="marginTop20 mainHeader textAlignLeft" style="margin-top: 25px; margin-left: 20px;">
                                 <div class="row paddingLeft10 colorIndigoRed">
                                     <span><i class="material-icons">work</i></span>
                                     <span class="marginLeft20" ><h3>WORK EXPERIENCE : </h3></span>
@@ -357,8 +357,8 @@
                                     <div>
                                         <!-- Heading -->
                                         <div class="row paddingLeft15 marginTop20 colorDodgerblue" >
-                                            <h4>I<sup>ST</sup> Project : </h4>
-                                            &nbsp;&nbsp;<h4>" <u>G.S.T.</u> " &nbsp;<u>(Goods And Service Tax)</u></h4>
+                                            <h4 class="insideHeaderNumber">I<sup>ST</sup> Project : </h4>
+                                            &nbsp;&nbsp;<h4 class="insideHeaderName">" <u>G.S.T.</u> " &nbsp;<u>(Goods And Service Tax)</u></h4>
                                         </div>
                                         <!-- Description -->
                                         <div class="marginTop20">
@@ -388,8 +388,8 @@
                                     <div>
                                         <!-- Heading -->
                                         <div class="row paddingLeft15 marginTop20 colorDodgerblue">
-                                            <h4>II<sup>nd</sup> Project : </h4>
-                                            &nbsp;&nbsp;<h4><u>FollowClass Application</u></h4>
+                                            <h4 class="insideHeaderNumber">II<sup>nd</sup> Project : </h4>
+                                            &nbsp;&nbsp;<h4 class="insideHeaderName"><u>FollowClass Application</u></h4>
                                         </div>
                                         <!-- Description -->
                                         <div class="marginTop20">
@@ -421,8 +421,8 @@
                                     <div>
                                         <!-- Heading -->
                                         <div class="row paddingLeft15 marginTop20 colorDodgerblue">
-                                            <h4>III<sup>rd</sup> Project : </h4>
-                                            &nbsp;&nbsp;<h4><u>Pcloudy</u></h4>
+                                            <h4 class="insideHeaderNumber">III<sup>rd</sup> Project : </h4>
+                                            &nbsp;&nbsp;<h4 class="insideHeaderName"><u>Pcloudy</u></h4>
                                         </div>
                                         <!-- Description -->
                                         <div class="marginTop20">
@@ -452,14 +452,15 @@
                                 </div>
                             </div>
                             <!-- Education -->
-                            <div class="marginTop20 textAlignLeft" style="margin-top: 20px; margin-left: 20px;">
+                            <div class="marginTop20 mainHeader textAlignLeft" style="margin-top: 20px; margin-left: 20px;">
                                 <div class="row marginTop20 paddingLeft10 colorIndigoRed">
                                     <span><i class="fa fa-graduation-cap graduation-cap" aria-hidden="true"></i></span>
                                     <span class="marginLeft20 marginBottom20"><h3>EDUCATION : </h3></span>
                                 </div>
                                 <div>
+                                    <!-- Engineering Details -->
                                     <div>
-                                        <span class="colorDodgerblue marginTop20"><h4><u>Bachelor Of Engineering</u></h4></span>
+                                        <span class="colorDodgerblue marginTop20"><h4 class="insideHeaderName"><u>Bachelor Of Engineering</u></h4></span>
                                         <div>
                                             <div  class="row">
                                                 <span class="paddingLeft15 paddingTop10 colorSkills"><h5>Major : </h5></span>
@@ -476,8 +477,9 @@
                                         </div>
                                     </div>
                                     <hr>
+                                    <!-- P.U. Details-->
                                     <div>
-                                        <span class="colorDodgerblue marginTop20"><h4><u>P.U.</u></h4></span>
+                                        <span class="colorDodgerblue marginTop20"><h4 class="insideHeaderName"><u>P.U.</u></h4></span>
                                         <div class="row">
                                             <span class="paddingLeft15 marginTop10 colorSkills"><h5>Major :</h5></span>
                                             &nbsp;<span class="paddingTop10"><b>Mathematics</b></span>
@@ -492,8 +494,9 @@
                                         </div>
                                     </div>
                                     <hr>
+                                    <!-- High School Details-->
                                     <div>
-                                        <span class="colorDodgerblue marginTop20"><h4><u>High School</u></h4></span>
+                                        <span class="colorDodgerblue marginTop20"><h4 class="insideHeaderName"><u>High School</u></h4></span>
                                         <div class="row">
                                             <span class="paddingLeft15 marginTop10 colorSkills"><h5>Major :</h5></span>
                                             &nbsp;<span class="paddingTop10"><b>Science</b></span>
@@ -517,7 +520,7 @@
     </div>
     <div class="card-footer text-white bg-secondary mb-3" style="height: 250px;">
         <div class="row">
-            <div class="col-md-4 textAlignLeft">
+            <div class="col-md-4 footerFirst textAlignLeft">
                 <div class="paddingTop20">
                     <ol>
                         <li>Create Profile</li>
@@ -527,7 +530,7 @@
                     </ol>
                 </div>
             </div>
-            <div class="col-md-4 textAlignLeft">
+            <div class="col-md-4 footerSecond textAlignLeft">
                 <div class="paddingTop20">
                     <ol>
                         <li>Login</li>
@@ -537,7 +540,7 @@
                     </ol>
                 </div>
             </div>
-            <div class="col-md-4 textAlignLeft">
+            <div class="col-md-4 footerThird textAlignLeft">
                 <div class="paddingTop20">
                     <div>
                         
